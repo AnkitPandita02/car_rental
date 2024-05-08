@@ -1645,7 +1645,7 @@ header.header-light .logo-2 {
 }
 
 #topbar.topbar-dark{
-    background:#222733;
+    background:#000;
 }
 
 #topbar a {
@@ -5759,7 +5759,11 @@ i.font60 {
 }
 
 /* pagination */
-
+.contact_form_inner_right {
+    gap: 35px;
+    align-items: center;
+    justify-content: center !important;
+}
 
 /* ======================================== */
 
@@ -18284,3 +18288,4 @@ img {
         top: -21px;
     }
 }
+
