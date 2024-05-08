@@ -199,7 +199,7 @@ header.header-bg {
 
 header.transparent {
     background: none;
-    background-color: #231f20;
+    background-color: #000;
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
