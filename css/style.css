@@ -146,6 +146,7 @@ header.header-s1 {
     top: 0;
 }
 
+
 header .info {
     display: none;
     color: #fff;
@@ -18289,3 +18290,20 @@ img {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.res001:hover, a.res001:active, a.res001:focus {
+    color: #f36a21;
+}
