@@ -72,6 +72,12 @@ body {
     word-spacing: 0px;
     letter-spacing: -0.2px;
 }
+a.res001{
+    color:#000;
+}
+a.res001:hover, a.res001:active, a.res001:focus {
+    color: #f36a21;
+}
 
 .dark-scheme{
     color: var(--dark-body-font-color);
@@ -18303,7 +18309,3 @@ img {
 
 
 
-
-a.res001:hover, a.res001:active, a.res001:focus {
-    color: #f36a21;
-}
