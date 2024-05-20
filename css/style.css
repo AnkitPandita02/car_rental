@@ -13346,7 +13346,7 @@ section.no-padding {
     -webkit-border-radius:0 5px 5px 0;\
     padding: 12px 5px;
     border:solid 1px #bbbbbb;
-    border-left: none;
+    /* border-left: none; */
 }
 
 .d-carousel{
@@ -18311,3 +18311,7 @@ h2.k_text001 {
 
 
 
+#pick_up ,#Drop_Off{
+   width:100%;
+   -webkit-border-radius: 5px 5px 5px 5px;
+}

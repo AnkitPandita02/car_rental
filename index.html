@@ -143,10 +143,10 @@
                       <!-- </ul> -->
                     </li>
                     <li>
-                      <a class="menu-item" href="#">Key-Box</a>
+                      <a class="menu-item" href="key_box.html">Key-Box</a>
                     </li>
                     <li>
-                      <a class="menu-item" href="#">contact</a>
+                      <a class="menu-item" href="contact.html">contact</a>
                       <!-- <ul> -->
                         <!-- <li>
                           <a class="menu-item" href="account-dashboard.html"
@@ -371,227 +371,191 @@
                 <div class="spacer-single"></div>
               </div>
 
-              <div class="">
+              <div class="col-lg-6">
                 <div class="spacer-single sm-hide"></div>
-                <div
-                  class="p-4 rounded-3 shadow-soft ankit_01"
-                  data-bgcolor="#ffffff"
-                >
-                  <form name="contactForm" id="contact_form" method="post">
-                    <div class="contact_form_inner">
-                      <div>
-                        <div class=" mb20">
-                          <h5>Pick Up Location</h5>
-                          <input
-                            type="text"
-                            name="PickupLocation"
-                            onfocus="geolocate()"
-                            placeholder="Enter your pickup location"
-                            id="autocomplete"
-                            autocomplete="off"
-                            class="form-control"
-                          />
+                <div class="p-4 rounded-3 shadow-soft" data-bgcolor="#ffffff">
+                    
 
-                          <div
-                            class="jls-address-preview jls-address-preview--hidden"
-                          >
-                            <div class="jls-address-preview__header"></div>
-                          </div>
+                    <form name="contactForm" id='contact_form' method="post">
+                        <!-- <h5>What is your vehicle type?</h5>
+
+                        <div class="de_form de_radio row g-3">
+                            <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                <input id="radio-1a" name="Car_Type" type="radio" value="Residential" checked="checked">
+                                <label for="radio-1a"><img src="images/select-form/car.png" alt="">Car</label>
+                            </div>
+
+                            <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                <input id="radio-1b" name="Car_Type" type="radio" value="Office">
+                                <label for="radio-1b"><img src="images/select-form/van.png" alt="">Van</label>
+                            </div>
+
+                            <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                <input id="radio-1c" name="Car_Type" type="radio" value="Commercial">
+                                <label for="radio-1c"><img src="images/select-form/minibus.png" alt="">Minibus</label>
+                            </div>
+
+                            <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                <input id="radio-1d" name="Car_Type" type="radio" value="Retail">
+                                <label for="radio-1d"><img src="images/select-form/sportscar.png" alt="">Prestige</label>
+                            </div>
+                        </div> -->
+
+                        <div class="spacer-20"></div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb20">
+                                <h5>Pick Up Location</h5>
+                                <div class="date-time-field">
+                                  <select name="Pick Up Time" id="pick_up">
+                                    <option selected disabled value="Select pick_up">select your pickup location</option>
+                                    <option value="Romont_Gare">Romont Gare</option></select>
+                                </div>
+
+                                <div class="jls-address-preview jls-address-preview--hidden">
+                                    <div class="jls-address-preview__header">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb20">
+                                <h5>Drop Off Location</h5>
+                                <div class="date-time-field">
+                                  <select name="Drop Off Location" id="Drop_Off">
+                                    <option selected disabled value="Select drop_off">select your drop Off location</option>
+                                    <option value="Romont_Gare">Romont Gare</option></select>
+                                </div>
+
+                                <div class="jls-address-preview jls-address-preview--hidden">
+                                    <div class="jls-address-preview__header">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb20">
+                                <h5>Pick Up Date & Time</h5>
+                                <div class="date-time-field">
+                                    <input type="text" id="date-picker" name="Pick Up Date" value="">
+                                    <select name="Pick Up Time" id="pickup-time">
+                                        <option selected disabled value="Select time">Time</option>
+                                        <option value="00:00">00:00</option>
+                                        <option value="00:30">00:30</option>
+                                        <option value="01:00">01:00</option>
+                                        <option value="01:30">01:30</option>
+                                        <option value="02:00">02:00</option>
+                                        <option value="02:30">02:30</option>
+                                        <option value="03:00">03:00</option>
+                                        <option value="03:30">03:30</option>
+                                        <option value="04:00">04:00</option>
+                                        <option value="04:30">04:30</option>
+                                        <option value="05:00">05:00</option>
+                                        <option value="05:30">05:30</option>
+                                        <option value="06:00">06:00</option>
+                                        <option value="06:30">06:30</option>
+                                        <option value="07:00">07:00</option>
+                                        <option value="07:30">07:30</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="08:30">08:30</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="23:30">23:30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb20">
+                                <h5>Return Date & Time</h5>
+                                <div class="date-time-field">
+                                    <input type="text" id="date-picker-2" name="Collection Date" value="">
+                                    <select name="Collection Time" id="collection-time">
+                                        <option selected disabled value="Select time">Time</option>
+                                        <option value="00:00">00:00</option>
+                                        <option value="00:30">00:30</option>
+                                        <option value="01:00">01:00</option>
+                                        <option value="01:30">01:30</option>
+                                        <option value="02:00">02:00</option>
+                                        <option value="02:30">02:30</option>
+                                        <option value="03:00">03:00</option>
+                                        <option value="03:30">03:30</option>
+                                        <option value="04:00">04:00</option>
+                                        <option value="04:30">04:30</option>
+                                        <option value="05:00">05:00</option>
+                                        <option value="05:30">05:30</option>
+                                        <option value="06:00">06:00</option>
+                                        <option value="06:30">06:30</option>
+                                        <option value="07:00">07:00</option>
+                                        <option value="07:30">07:30</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="08:30">08:30</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="23:30">23:30</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class=" mb20">
-                          <h5>Drop Off Location</h5>
-                          <input
-                            type="text"
-                            name="DropoffLocation"
-                            onfocus="geolocate()"
-                            placeholder="Enter your dropoff location"
-                            id="autocomplete2"
-                            autocomplete="off"
-                            class="form-control"
-                          />
+                        <input type='submit' id='send_message' value='Find a Vehicle' class="btn-main pull-right">
 
-                          <div
-                            class="jls-address-preview jls-address-preview--hidden"
-                          >
-                            <div class="jls-address-preview__header"></div>
-                          </div>
-                        </div>
-                        <div class=" mb20">
-                          <h5> Romont Gare</h5>
-                          <input
-                            type="text"
-                            name="PickupLocation"
-                            onfocus="geolocate()"
-                            placeholder="Enter your Romont Gare"
-                            id="autocomplete"
-                            autocomplete="off"
-                            class="form-control"
-                          />
-
-                          <div
-                            class="jls-address-preview jls-address-preview--hidden"
-                          >
-                            <div class="jls-address-preview__header"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="contact_form_inner_right">
-                        <div class=" ">
-                          <h5>Pick Up Date & Time</h5>
-                          <div class="date-time-field">
-                            <input
-                              type="text"
-                              id="date-picker"
-                              name="Pick Up Date"
-                              value=""
-                            />
-                            <select name="Pick Up Time" id="pickup-time">
-                              <option selected disabled value="Select time">
-                                Time
-                              </option>
-                              <option value="00:00">00:00</option>
-                              <option value="00:30">00:30</option>
-                              <option value="01:00">01:00</option>
-                              <option value="01:30">01:30</option>
-                              <option value="02:00">02:00</option>
-                              <option value="02:30">02:30</option>
-                              <option value="03:00">03:00</option>
-                              <option value="03:30">03:30</option>
-                              <option value="04:00">04:00</option>
-                              <option value="04:30">04:30</option>
-                              <option value="05:00">05:00</option>
-                              <option value="05:30">05:30</option>
-                              <option value="06:00">06:00</option>
-                              <option value="06:30">06:30</option>
-                              <option value="07:00">07:00</option>
-                              <option value="07:30">07:30</option>
-                              <option value="08:00">08:00</option>
-                              <option value="08:30">08:30</option>
-                              <option value="09:00">09:00</option>
-                              <option value="09:30">09:30</option>
-                              <option value="10:00">10:00</option>
-                              <option value="10:30">10:30</option>
-                              <option value="11:00">11:00</option>
-                              <option value="11:30">11:30</option>
-                              <option value="12:00">12:00</option>
-                              <option value="12:30">12:30</option>
-                              <option value="13:00">13:00</option>
-                              <option value="13:30">13:30</option>
-                              <option value="14:00">14:00</option>
-                              <option value="14:30">14:30</option>
-                              <option value="15:00">15:00</option>
-                              <option value="15:30">15:30</option>
-                              <option value="16:00">16:00</option>
-                              <option value="16:30">16:30</option>
-                              <option value="17:00">17:00</option>
-                              <option value="17:30">17:30</option>
-                              <option value="18:00">18:00</option>
-                              <option value="18:30">18:30</option>
-                              <option value="19:00">19:00</option>
-                              <option value="19:30">19:30</option>
-                              <option value="20:00">20:00</option>
-                              <option value="20:30">20:30</option>
-                              <option value="21:00">21:00</option>
-                              <option value="21:30">21:30</option>
-                              <option value="22:00">22:00</option>
-                              <option value="22:30">22:30</option>
-                              <option value="23:00">23:00</option>
-                              <option value="23:30">23:30</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="">
-                          <h5>Return Date & Time</h5>
-                          <div class="date-time-field">
-                            <input
-                              type="text"
-                              id="date-picker-2"
-                              name="Collection Date"
-                              value=""
-                            />
-                            <select name="Collection Time" id="collection-time">
-                              <option selected disabled value="Select time">
-                                Time
-                              </option>
-                              <option value="00:00">00:00</option>
-                              <option value="00:30">00:30</option>
-                              <option value="01:00">01:00</option>
-                              <option value="01:30">01:30</option>
-                              <option value="02:00">02:00</option>
-                              <option value="02:30">02:30</option>
-                              <option value="03:00">03:00</option>
-                              <option value="03:30">03:30</option>
-                              <option value="04:00">04:00</option>
-                              <option value="04:30">04:30</option>
-                              <option value="05:00">05:00</option>
-                              <option value="05:30">05:30</option>
-                              <option value="06:00">06:00</option>
-                              <option value="06:30">06:30</option>
-                              <option value="07:00">07:00</option>
-                              <option value="07:30">07:30</option>
-                              <option value="08:00">08:00</option>
-                              <option value="08:30">08:30</option>
-                              <option value="09:00">09:00</option>
-                              <option value="09:30">09:30</option>
-                              <option value="10:00">10:00</option>
-                              <option value="10:30">10:30</option>
-                              <option value="11:00">11:00</option>
-                              <option value="11:30">11:30</option>
-                              <option value="12:00">12:00</option>
-                              <option value="12:30">12:30</option>
-                              <option value="13:00">13:00</option>
-                              <option value="13:30">13:30</option>
-                              <option value="14:00">14:00</option>
-                              <option value="14:30">14:30</option>
-                              <option value="15:00">15:00</option>
-                              <option value="15:30">15:30</option>
-                              <option value="16:00">16:00</option>
-                              <option value="16:30">16:30</option>
-                              <option value="17:00">17:00</option>
-                              <option value="17:30">17:30</option>
-                              <option value="18:00">18:00</option>
-                              <option value="18:30">18:30</option>
-                              <option value="19:00">19:00</option>
-                              <option value="19:30">19:30</option>
-                              <option value="20:00">20:00</option>
-                              <option value="20:30">20:30</option>
-                              <option value="21:00">21:00</option>
-                              <option value="21:30">21:30</option>
-                              <option value="22:00">22:00</option>
-                              <option value="22:30">22:30</option>
-                              <option value="23:00">23:00</option>
-                              <option value="23:30">23:30</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="">
-                          <input
-                        type="submit"
-                        id="send_message"
-                        value="Find a Vehicle"
-                        class="btn-main pull-right"
-                      />
-                        </div>
+                        <div class="clearfix"></div>
                         
-                    </div>
-                      </div>
-                    </div>
-
-                    <!-- <div class="mb-4">
-                      <input
-                        type="submit"
-                        id="send_message"
-                        value="Find a Vehicle"
-                        class="btn-main pull-right"
-                      />
-                    </div> -->
-                  </form>
+                    </form>
                 </div>
-              </div>
+            </div>
 
               <div class="spacer-double"></div>
 
@@ -893,7 +857,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_1.jpeg"
+                        src="images/cars/1-removebg-preview (1).png"
                         class="img-fluid"
                         alt=""
                       />
@@ -933,7 +897,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_2.jpeg"
+                        src="images/cars/2-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -973,7 +937,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_3.jpeg"
+                        src="images/cars/3-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -1014,7 +978,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_4.jpeg"
+                        src="images/cars/4-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -1054,7 +1018,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_5.jpeg"
+                        src="images/cars/5-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -1097,7 +1061,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_6.jpeg"
+                        src="images/cars/6-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -1139,7 +1103,7 @@
                   <div class="de-item mb30">
                     <div class="d-img">
                       <img
-                        src="images/cars/car_7.jpeg"
+                        src="images/cars/7-removebg-preview.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -1332,14 +1296,10 @@
                     <div class="d-quote id-color">
                       <i class="fa fa-quote-right"></i>
                     </div>
-                    <h4>Excellent Service! Car Rent Service!</h4>
+                    <h4> Service excellent.</h4>
                     <blockquote>
-                      I have been using Rentaly for my Tips &amp; Trick needs
-                      for over 5 years now. I have never had any problems with
-                      their service. Their customer support is always responsive
-                      and helpful. I would recommend Rentaly to anyone looking
-                      for a reliable Tips &amp; Trick provider.
-                      <span class="by">Stepanie Hutchkiss</span>
+                      Loué un bus 9 places pour aller à Ballenberg avec mes enfants et petits enfants. Excellent service. Le véhicule est en parfait état et le loueur très aimable. On vous le conseille.
+                      <span class="by">Oswaldo Oswaldo</span>
                     </blockquote>
                   </div>
                   <img
@@ -1356,14 +1316,13 @@
                     <div class="d-quote id-color">
                       <i class="fa fa-quote-right"></i>
                     </div>
-                    <h4>Excellent Service! Car Rent Service!</h4>
+                    <h4>efficace et rapide.</h4>
                     <blockquote>
-                      We have been using Rentaly for our trips needs for several
-                      years now and have always been happy with their service.
-                      Their customer support is Excellent Service! and they are
-                      always available to help with any issues we have. Their
-                      prices are also very competitive.
-                      <span class="by">Jovan Reels</span>
+                      Service au top, efficace et rapide.
+Tout c'est très bien passé :)
+
+Un grand merci, je recommande fortement (et n'hésiterais pas à relouer un véhicule chez LocaFri) !
+                      <span class="by">Guillaume Pidoux</span>
                     </blockquote>
                   </div>
                   <img
@@ -1380,13 +1339,12 @@
                     <div class="d-quote id-color">
                       <i class="fa fa-quote-right"></i>
                     </div>
-                    <h4>Excellent Service! Car Rent Service!</h4>
+                    <h4>service soigné, toujours disponible</h4>
                     <blockquote>
-                      Endorsed by industry experts, Rentaly is the Tips &amp;
-                      Trick solution you can trust. With years of experience in
-                      the field, we provide fast, reliable and secure Tips &amp;
-                      Trick services.
-                      <span class="by">Kanesha Keyton</span>
+                      Équipe 5 étoiles, service très soigné, toujours disponible pour tout client et ses besoins.
+Je louerai à nouveau sans aucun doute.
+Large gamme de voitures, pour tous les goûts, prix et besoins.
+                      <span class="by">Andre Filipe Nogueira Ferreira</span>
                     </blockquote>
                   </div>
                   <img
